@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import newMessages from '../messages';
 
 @Component({
   selector: 'app-top-nav',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavComponent implements OnInit {
 
+  messages: Array<any> = [];
   constructor() { }
 
   ngOnInit() {
+    this.messages = newMessages;
   }
 
 }
